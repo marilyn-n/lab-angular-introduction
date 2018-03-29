@@ -1,0 +1,14 @@
+<h1>NBA Champions</h1>
+
+
+<ul *ngFor="let champion of champions">
+  <li> {{champion.championship_year}}</li>
+  <li>{{champion.championName}}</li>
+  <li>
+    <img src="{{champion.url_img}}" alt="" width="150px">
+  </li>
+  <ul *ngFor="let player of players">
+    <li>{{player.name}} {{player.lastName}}</li>
+  </ul>
+</ul>
+<br>
